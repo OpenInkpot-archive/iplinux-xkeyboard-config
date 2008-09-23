@@ -1,0 +1,20 @@
+Source: xkeyboard-config
+Section: gui
+Priority: optional
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: debhelper (>= 4.0.0), quilt, automake, libtool
+Build-Depends-Indep: libxml-parser-perl
+XCS-Cross-Host-Build-Depends: debhelper (>= 4.0.0), quilt, libxml-parser-perl, automake, libtool, intltool
+Standards-Version: 3.7.3
+
+Package: xkb-data
+Architecture: all
+Description: X Keyboard Extension (XKB) configuration data
+ This package contains configuration data used by the X Keyboard
+ Extension (XKB), which allows selection of keyboard layouts when
+ using a graphical interface.
+ .
+ Every X11 vendor provides its own XKB data files, so keyboard layout
+ designers have to send their layouts to several places.  The
+ xkeyboard-config project has been launched at FreeDesktop in order
+ to provide a central repository that could be used by all vendors.
