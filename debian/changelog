@@ -1,3 +1,11 @@
+xkeyboard-config (1.5-1) asimov; urgency=low
+
+  * New upstream release.
+  * First build for IPlinux.
+    - xkb-data dropped, xkb-data-v3 added.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Sun, 15 Mar 2009 18:29:01 +0600
+
 xkeyboard-config (1.3-2.oi1) asimov; urgency=low
 
   * First build for OpenInkpot

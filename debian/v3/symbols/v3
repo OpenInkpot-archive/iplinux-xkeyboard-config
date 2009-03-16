@@ -1,0 +1,32 @@
+default xkb_symbols {
+  name[Group1]="V3";
+  
+  modifier_map Mod1 { Alt_L, Meta_L };
+  
+  // virtual key: long press exposed by kernel as Alt+key
+  key <LALT> {
+    [ Alt_L ]
+  };
+  
+  key <POWR> { [XF86PowerOff] };
+  
+  key <UP> { [Up] };
+  key <DOWN> { [Down] };
+  
+  key <KPAD> { [KP_Add] };
+  key <KPSU> { [KP_Subtract] };
+  
+  key <AE01> { [1] };
+  key <AE02> { [2] };
+  key <AE03> { [3] };
+  key <AE04> { [4] };
+  key <AE05> { [5] };
+  key <AE06> { [6] };
+  key <AE07> { [7] };
+  key <AE08> { [8] };
+  key <AE09> { [9] };
+  key <AE10> { [0] };
+ 
+  key <ESC> { [Escape] }; 
+  key <RTRN> { [Return] };
+};

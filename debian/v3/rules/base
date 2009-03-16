@@ -1,0 +1,18 @@
+! model = keycodes
+* = evdev
+
+! model = geometry
+* = v3
+
+! model = symbols
+* = v3
+//* = pc+us
+
+! model = compat
+//* = complete
+* = v3
+
+! model = types
+//* = complete
+*  = v3
+
