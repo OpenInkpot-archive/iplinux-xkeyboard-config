@@ -5,22 +5,29 @@
 
 xkb_base := /usr/share/X11/xkb
 
-build:
+v3_xkm := def-evdev-v3-v3-v3-v3.xkm
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+
+	xkbcomp -I -I. -Idebian/v3 debian/v3/config -xkm -o $(v3_xkm)
 
 clean:
 	dh_testdir
 	dh_testroot
 	dh_clean 
 
+	[ ! -f $(v3_xkm) ] || rm -f $(v3_xkm)
+
 install:
 	dh_testdir
 	dh_testroot
 	dh_prep
 
-	mkdir -p $(CURDIR)/debian/xkb-data-v3/$(xkb_base)
-	cp -R debian/v3/* $(CURDIR)/debian/xkb-data-v3/$(xkb_base)
-	install -d $(CURDIR)/debian/xkb-data-v3/$(xkb_base)/keycodes
-	cp keycodes/evdev $(CURDIR)/debian/xkb-data-v3/$(xkb_base)/keycodes
+	mkdir -p $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
+	cp -R debian/v3/rules $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
+	cp -f $(v3_xkm) $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
 
 binary-arch: build install
 

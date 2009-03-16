@@ -1,0 +1,7 @@
+xkb_keymap {
+  xkb_keycodes  { include "evdev" };
+  xkb_types     { include "v3" };
+  xkb_compat    { include "v3" };
+  xkb_symbols   { include "v3" };
+  xkb_geometry  { include "v3" };
+};

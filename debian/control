@@ -2,14 +2,14 @@ Source: xkeyboard-config
 Section: gui
 Priority: optional
 Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
-Build-Depends: debhelper (>= 4.0.0)
-XCS-Cross-Host-Build-Depends: debhelper (>= 4.0.0)
-Standards-Version: 3.7.3
+Build-Depends: debhelper (>= 4.0.0), x11-xkb-utils
+XCS-Cross-Host-Build-Depends: debhelper (>= 4.0.0), x11-xkb-utils
+Standards-Version: 3.8.0
 
-Package: xkb-data-v3
-Provides: xkb-data
+Package: xkm-data-v3
+Provides: xkm-data
 Architecture: all
-Description: X Keyboard Extension (XKB) configuration data (Hanlin V3)
+Description: (XKB) configuration data, compiled (Hanlin V3)
  This package contains configuration data used by the X Keyboard
  Extension (XKB), which allows selection of keyboard layouts when
  using a graphical interface.
@@ -19,6 +19,5 @@ Description: X Keyboard Extension (XKB) configuration data (Hanlin V3)
  xkeyboard-config project has been launched at FreeDesktop in order
  to provide a central repository that could be used by all vendors.
  .
- This package contains only small subset of XKB files, tailored to use
+ This package contains only pre-compiled subset of XKB files, tailored to use
  with Hanlin V3.
-
