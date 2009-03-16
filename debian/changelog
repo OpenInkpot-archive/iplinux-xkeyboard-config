@@ -1,3 +1,9 @@
+xkeyboard-config (1.5-2) asimov; urgency=low
+
+  * xkb-data-v3 dropped, xkm-data-v3 added, precompiled.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Tue, 17 Mar 2009 03:45:56 +0600
+
 xkeyboard-config (1.5-1) asimov; urgency=low
 
   * New upstream release.
