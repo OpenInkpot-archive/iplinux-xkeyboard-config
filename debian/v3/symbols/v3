@@ -1,7 +1,7 @@
 default xkb_symbols {
-  name[Group1]="V3";
+  name[Group1]="ebooks";
   
-  modifier_map Mod1 { Alt_L, Meta_L };
+  modifier_map Mod1 { Alt_L };
   
   // virtual key: long press exposed by kernel as Alt+key
   key <LALT> {
@@ -9,9 +9,16 @@ default xkb_symbols {
   };
   
   key <POWR> { [XF86PowerOff] };
+
+  key <SPCE> { [space] };
   
   key <UP> { [Up] };
   key <DOWN> { [Down] };
+  key <LEFT> { [Left] };
+  key <RGHT> { [Right] };
+
+  key <PGUP> { [Prior] };
+  key <PGDN> { [Next] };
   
   key <KPAD> { [KP_Add] };
   key <KPSU> { [KP_Subtract] };
@@ -29,4 +36,12 @@ default xkb_symbols {
  
   key <ESC> { [Escape] }; 
   key <RTRN> { [Return] };
+
+  key <I147> { [Menu] };
+  key <I161> { [XF86RotateWindows] };
+  key <I225> { [XF86Search] };
+  key <I172> { [XF86AudioPlay] };
+
+  key <I150> { [XF86Sleep] };
+  key <I151> { [XF86WakeUp] };
 };
