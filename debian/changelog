@@ -1,3 +1,9 @@
+xkeyboard-config (1.5-4) asimov; urgency=low
+
+  * Added new keys for N516.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 26 Mar 2009 00:48:16 +0600
+
 xkeyboard-config (1.5-3) asimov; urgency=low
 
   * Fixed symbols/v3: numeric keys should emit KP_n.
