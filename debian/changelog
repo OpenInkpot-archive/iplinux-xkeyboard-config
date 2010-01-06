@@ -1,3 +1,9 @@
+xkeyboard-config (1.5-5) zelazny; urgency=low
+
+  * Adjust pre-compiled keymap name to match new X server.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Wed, 06 Jan 2010 19:32:34 +0600
+
 xkeyboard-config (1.5-4) asimov; urgency=low
 
   * Added new keys for N516.
