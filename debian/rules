@@ -5,7 +5,7 @@
 
 xkb_base := /usr/share/X11/xkb
 
-v3_xkm := def-evdev-v3-v3-v3-v3.xkm
+v3_xkm := evdev-v3-v3-v3-v3.xkm
 
 build: build-stamp
 build-stamp:
