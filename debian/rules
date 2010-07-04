@@ -26,8 +26,9 @@ install:
 	dh_prep
 
 	mkdir -p $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
+	mkdir -p $(CURDIR)/debian/xkm-data-v3/$(xkb_base)/precompiled
 	cp -R debian/v3/rules $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
-	cp -f $(v3_xkm) $(CURDIR)/debian/xkm-data-v3/$(xkb_base)
+	cp -f $(v3_xkm) $(CURDIR)/debian/xkm-data-v3/$(xkb_base)/precompiled
 
 binary-arch: build install
 
