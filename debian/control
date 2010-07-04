@@ -8,6 +8,7 @@ Standards-Version: 3.8.0
 
 Package: xkm-data-v3
 Provides: xkm-data
+Breaks: xserver-xfbdev (<= 2:1.8.99.904~)
 Architecture: all
 Description: (XKB) configuration data, compiled (Hanlin V3)
  This package contains configuration data used by the X Keyboard
