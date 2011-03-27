@@ -36,6 +36,7 @@ default xkb_keycodes "evdev" {
 	<AD11> = 34;
 	<AD12> = 35;
 	<BKSL> = 51;
+	alias <AC12> = <BKSL>;
 	<RTRN> = 36;
 
 	<CAPS> = 66;
@@ -145,7 +146,8 @@ default xkb_keycodes "evdev" {
 
 	// Keys that are generated on Japanese keyboards
 
-	<HZTG> =  93;	// Hankaku/Zenkakau toggle
+	//<HZTG> =  93;	// Hankaku/Zenkakau toggle - not actually used
+	alias <HZTG> = <TLDE>;
 	<HKTG> = 101;	// Hiragana/Katakana toggle
 	<AB11> = 97;	// backslash/underscore
 	<HENK> = 100;	// Henkan
@@ -187,6 +189,7 @@ default xkb_keycodes "evdev" {
 	<LNFD> = 109;	// #define KEY_LINEFEED            101
 	<I120> = 120;	// #define KEY_MACRO               112
 	<I126> = 126;	// #define KEY_KPPLUSMINUS         118
+	<I128> = 128;   // #define KEY_SCALE               120
 	<I129> = 129;	// #define KEY_KPCOMMA             121
 	<I147> = 147;	// #define KEY_MENU                139
 	<I148> = 148;	// #define KEY_CALC                140
@@ -236,6 +239,7 @@ default xkb_keycodes "evdev" {
 	<I209> = 209;	// #define KEY_PAUSECD             201
 	<I210> = 210;	// #define KEY_PROG3               202
 	<I211> = 211;	// #define KEY_PROG4               203 conflicts with AB11
+	<I212> = 212;   // #define KEY_DASHBOARD           204
 	<I213> = 213;	// #define KEY_SUSPEND             205
 	<I214> = 214;	// #define KEY_CLOSE               206
 	<I215> = 215;	// #define KEY_PLAY                207
@@ -299,23 +303,12 @@ default xkb_keycodes "evdev" {
 	indicator 11 = "Charging";
 
 	alias <ALGR> = <RALT>;
-};
 
-// For japanese 106 keyboard.
-xkb_keycodes "jp106" {
-    include "evdev(evdev)"
-    <HZTG> = 49;
-    <AC12> = 51;
-};
-
-// For brazilian ABNT2 keyboard.
-xkb_keycodes "abnt2" {
-    include "evdev(evdev)"
-    <KPPT> = 129;
+	// For Brazilian ABNT2
+	alias <KPPT> = <I129>;
 };
 
 // PC98
 xkb_keycodes "pc98" {
     include "evdev(evdev)"
 };
-

@@ -1,9 +1,5 @@
-// $XKeyboardConfig$
-
 // based on a keyboard
 // Modified for a real Latin American Keyboard by Fabian Mandelbaum
-//
-// $XFree86: xc/programs/xkbcomp/symbols/la,v 1.2 2002/11/22 04:03:28 dawes Exp $
 
 partial default alphanumeric_keys
 xkb_symbols "basic" {
@@ -35,8 +31,8 @@ partial alphanumeric_keys
 xkb_symbols "Sundeadkeys" {
     include "latam(basic)"
 
-    key <AC11>	{ [SunFA_Acute, SunFA_Diaeresis, braceleft, braceleft ]	};
-    key <AD11>	{ [SunFA_Grave, SunFA_Circum, bracketleft, dead_abovering ] };
+    key <AC11>	{ [dead_acute, dead_diaeresis, braceleft, braceleft ]	};
+    key <AD11>	{ [dead_grave, dead_circumflex, bracketleft, dead_abovering ] };
 };
 
 partial alphanumeric_keys

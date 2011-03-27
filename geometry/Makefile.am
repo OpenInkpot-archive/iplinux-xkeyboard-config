@@ -6,9 +6,9 @@ dist_geom_DATA = \
 amiga ataritt chicony \
 dell everex fujitsu \
 hhk hp keytronic kinesis \
-macintosh microsoft nec \
-northgate pc sony thinkpad \
-sun winbook README
+macintosh microsoft nec nokia \
+northgate pc sanwa sony thinkpad \
+sun typematrix winbook README
 
 dir_data = $(dist_geom_DATA)
 
