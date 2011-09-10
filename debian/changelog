@@ -1,3 +1,9 @@
+xkeyboard-config (1.5-8) zelazny; urgency=low
+
+  * Add keys for PRS505
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sun, 11 Sep 2011 00:39:07 +0200
+
 xkeyboard-config (1.5-7) zelazny; urgency=low
 
   * Move precompiled keyboard definition to /usr/share/X11/xkb/precompiled.
