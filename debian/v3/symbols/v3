@@ -41,6 +41,9 @@ default xkb_symbols {
   key <I161> { [XF86RotateWindows] };
   key <I225> { [XF86Search] };
   key <I172> { [XF86AudioPlay] };
+  key <I185> { [XF86Forward] };
+  key <I186> { [XF86Back] };
+  key <I243> { [XF86AddFavorite] };
 
   key <I150> { [XF86Sleep] };
   key <I151> { [XF86WakeUp] };
